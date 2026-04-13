@@ -18,3 +18,4 @@ jobs:
           cloud: true
         env:
           K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
+          K6_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
