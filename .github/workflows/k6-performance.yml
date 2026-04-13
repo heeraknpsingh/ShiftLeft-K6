@@ -9,7 +9,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-      - name: Install k6
-        run: sudo apt-get install -y k6
-      - name: Run Performance Test
-        run: k6 run --out json=test_results.json load_test.js
+      - name: Run k6 test
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: load_test.js
+          flags: --out json=test_results.json
