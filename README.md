@@ -32,5 +32,7 @@ The dashboard URL uses `from` / `to` query parameters to pin the time window for
 ```bash
 k6 run load_k6_test.js
 ```
+<img width="1214" height="956" alt="Screenshot 2026-04-13 at 9 56 43 PM" src="https://github.com/user-attachments/assets/c1804cfb-02dd-4c78-b904-072afb363928" />
+<img width="1280" height="952" alt="Screenshot 2026-04-13 at 9 53 12 PM" src="https://github.com/user-attachments/assets/deae3004-76af-4260-933c-615f3a526da6" />
 
 Requires [k6](https://k6.io/docs/get-started/installation/) installed locally.
