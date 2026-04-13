@@ -11,14 +11,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Authenticate k6
-        run: k6 cloud login --token $K6_CLOUD_TOKEN
-        env:
-          K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
       - name: Run k6 test
         uses: grafana/k6-action@v0.3.1
         with:
           filename: load_k6_test.js
           cloud: true
-        env:
-          K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
+          token: ${{ secrets.K6_CLOUD_TOKEN }}
