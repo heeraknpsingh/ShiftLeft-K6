@@ -1,7 +1,6 @@
 import http from "k6/http";
 import { check, sleep } from "k6";
 
-// Define test options
 export let options = {
   stages: [
     { duration: "30s", target: 50 },
