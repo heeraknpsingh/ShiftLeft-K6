@@ -15,6 +15,6 @@ jobs:
         uses: grafana/k6-action@v0.3.1
         with:
           filename: load_k6_test.js
-          flags: --cloud
+          flags: --out cloud
         env:
           K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
