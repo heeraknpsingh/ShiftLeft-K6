@@ -16,5 +16,6 @@ jobs:
         with:
           filename: load_k6_test.js
           flags: --out cloud
+          cloud: true
         env:
           K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
